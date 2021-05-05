@@ -1,0 +1,10 @@
+spring:
+  application:
+#    和服务提供者一同名，用于测试负载均衡
+    name: eureka-provider-01
+server:
+  port: 8081
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka8762:8762/eureka/,http://eureka8761:8761/eureka/
